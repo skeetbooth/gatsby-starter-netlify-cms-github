@@ -24,4 +24,9 @@ collections:
     frontmatter_delimiter: ['<!--', '-->']
     fields: # The fields for each document, usually in front matter
       - { label: 'Title', name: 'title', widget: 'markdown' }
-      - { label: 'Body', name: 'body', widget: 'markdown', modes: ['raw'] }
+      - {
+          label: 'Body',
+          name: 'body',
+          widget: 'markdown',
+          modes: ['rich_text'],
+        }
