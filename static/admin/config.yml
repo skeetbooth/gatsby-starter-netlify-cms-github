@@ -15,13 +15,13 @@ public_folder: /img
 collections:
   - name: 'mdx-docs'
     label: 'MDX docs'
-    title: 'MDX docs'
     folder: 'src/stories'
     create: true
     extension: mdx
     slug: '{{title}}.stories'
+    identifier_field: title
     format: yaml-frontmatter
     frontmatter_delimiter: ['<!--', '-->']
     fields: # The fields for each document, usually in front matter
-      - { label: 'Title', name: 'title', widget: 'hidden' }
+      - { label: 'Title', name: 'title', widget: 'markdown' }
       - { label: 'Body', name: 'body', widget: 'markdown', modes: ['raw'] }
