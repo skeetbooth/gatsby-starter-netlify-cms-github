@@ -13,8 +13,9 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'docs'
-    label: 'Docs'
+  - name: 'mdx-docs'
+    label: 'MDX docs'
+    title: 'MDX docs'
     folder: 'src/stories'
     create: true
     extension: mdx
