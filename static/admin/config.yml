@@ -24,4 +24,3 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: 'Title', name: 'title', widget: 'hidden' }
       - { label: 'Body', name: 'body', widget: 'markdown', modes: ['raw'] }
-q
