@@ -1,9 +1,8 @@
 backend:
-  name: gitlab
-  repo: '/skeetbooth/gatsby-netlify-cms'
-  auth_type: pkce # Required for pkce
-  app_id: d333881aa13202fa7376a27dc47cbebeea300e3742b116bc4ac066a85fdeb931
-  branch: master
+  name: git-gateway
+  branch: main
+
+  local_backend: true
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
