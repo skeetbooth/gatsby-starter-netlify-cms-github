@@ -1,8 +1,7 @@
 backend:
   name: git-gateway
   branch: main
-
-  local_backend: true
+  repo: skeetbooth/gatsby-starter-netlify-cms-github
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
