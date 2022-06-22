@@ -9,13 +9,7 @@ import Layout from '../components/Layout'
 import FullWidthImage from '../components/FullWidthImage'
 
 // eslint-disable-next-line
-export const IndexPageTemplate = ({
-  image,
-  title,
-  heading,
-  subheading,
-  mainpitch,
-}) => {
+export const IndexPageTemplate = ({ image, title, subheading }) => {
   const heroImage = getImage(image) || image
 
   return (
@@ -28,18 +22,12 @@ export const IndexPageTemplate = ({
               <div className='column is-10 is-offset-1'>
                 <div className='content'>
                   <div className='content'>
-                    <div className='tile'>
-                      <h1 className='title'>{mainpitch.title}</h1>
-                    </div>
-                    <div className='tile'>
-                      <h3 className='subtitle'>{mainpitch.description}</h3>
-                      <Link
-                        className='btn'
-                        to='/admin/#/collections/mdx-docs/entries'
-                      >
-                        Go edit stuff
-                      </Link>
-                    </div>
+                    <Link
+                      className='btn'
+                      to='/admin/#/collections/mdx-docs/entries'
+                    >
+                      Go edit stuff
+                    </Link>
                   </div>
                   {/* <div className='columns'>
                     <div className='column is-12'>
@@ -84,11 +72,6 @@ IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
 }
 
 const IndexPage = ({ data }) => {
