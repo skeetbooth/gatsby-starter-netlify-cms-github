@@ -24,7 +24,12 @@ collections:
     format: yaml-frontmatter
     frontmatter_delimiter: ['<!--', '-->']
     fields: # The fields for each document, usually in front matter
-      - { label: 'Head', name: 'head', widget: 'hidden', default: 'import { Meta } from '@storybook/addon-docs' <Meta title='Example/Test' />' }
+      - {
+          label: 'Head',
+          name: 'head',
+          widget: 'hidden',
+          default: 'import { Meta } from "@storybook/addon-docs" <Meta title="Example/Test" />',
+        }
       - { label: 'Title', name: 'title', widget: 'string' }
       - {
           label: 'Body',
