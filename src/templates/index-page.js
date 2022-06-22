@@ -7,7 +7,7 @@ import Layout from '../components/Layout'
 // eslint-disable-next-line
 export const IndexPageTemplate = ({ title, subheading }) => {
   return (
-    <div>
+    <div className='box'>
       <h1>{title}</h1>
       <h2>{subheading}</h2>
       <Link className='btn' to='/admin/#/collections/mdx-docs/entries'>
