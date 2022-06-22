@@ -1,5 +1,6 @@
 ---
 templateKey: index-page
+image: /img/home-jumbotron.jpg
 title: Add or edit design system markdown pages
 heading: Add or edit design system markdown pages
 subheading: Without command lines or pull requests :)
