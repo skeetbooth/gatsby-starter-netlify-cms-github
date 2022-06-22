@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Helmet } from 'react-helmet'
 // import Footer from "../components/Footer";
 // import Navbar from "../components/Navbar";
-import './all.sass'
+import './all.scss'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
@@ -38,6 +38,11 @@ const TemplateWrapper = ({ children }) => {
           href={`${withPrefix('/')}img/safari-pinned-tab.svg`}
           color='#ff4400'
         />
+        <link
+          rel='stylesheet'
+          href='http://fonts.cdnfonts.com/css/gotham-rounded'
+        />
+
         <meta name='theme-color' content='#fff' />
 
         <meta property='og:type' content='business.business' />
